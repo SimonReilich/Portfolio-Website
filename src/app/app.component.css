@@ -7,6 +7,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    --text-color: var(--light-main);
 }
 
 .logo {
@@ -33,15 +34,28 @@ section {
 
 .hero-logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     text-align: center;
-    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100svh;
 
     font-size: min(10vh, 8.5vw);
     line-height: 1;
-    color: var(--light-main);
+    --text-color: var(--light-main);
+}
+
+.hero-logo.dark-mode {
+    background-color: #000;
+    mix-blend-mode: multiply;
+}
+
+.hero-logo.dark-mode h1 {
+    color: white;
 }
 
 .gradient-canvas {

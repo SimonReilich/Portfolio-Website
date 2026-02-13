@@ -1,6 +1,6 @@
-<nav>
+<nav [class.dark-mode]="isDarkMode">
   <div class="logo">
-    <img src="logo-white.svg" alt="">
+    <img src='logo-white.svg' alt="">
   </div>
   <div class="nav-items">
     <button>Home</button>
@@ -17,7 +17,7 @@
     </ngt-canvas>
   </div>
 
-  <div class="hero-logo">
+  <div class="hero-logo" [class.dark-mode]="isDarkMode">
     <h1>SIMON REILICH</h1>
   </div>
 </section>
