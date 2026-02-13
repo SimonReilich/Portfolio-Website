@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+  --light-main: #F2F7F2;
+  --dark-main: #0A0903;
+
+  --yellow: #f5af19;
+  --red: #f12711;
+  --purple: #8e2de2;
+  --blue: #4a00e0;
+}
+
 h1,
 h2,
 h3,
@@ -12,6 +22,7 @@ button {
   font-family: Tahoma, sans-serif;
   font-weight: 450;
   font-style: normal;
+  color: var(--text-color);
 }
 
 
@@ -25,4 +36,18 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: var(--dark-main);
+    --bg-color: var(--light-main);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--light-main);
+    --bg-color: var(--dark-main);
+  }
 }
