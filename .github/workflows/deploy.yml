@@ -27,5 +27,5 @@ jobs:
       - name: Deploying to Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: result/share/browser
+          folder: result/share/www
           branch: gh-pages
